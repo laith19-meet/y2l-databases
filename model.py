@@ -6,6 +6,10 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 # Write your classes here :
-class Product(Base):
-    # TODO: complete this class
-    pass
+class Animals(Base):
+	__tablename__ = 'animals'
+	Id = Column(Integer , primary_key = True)
+	name = Column(String)
+	age = Column(Integer)
+	Type = Column (String)
+	finished_lab = Column(Boolean)
